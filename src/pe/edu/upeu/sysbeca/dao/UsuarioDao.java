@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package pe.edu.upeu.sysbeca.model;
+package pe.edu.upeu.sysbeca.dao;
 
 /**
  *
  * @author alum.fial8
  */
-public class Salida {
+public class UsuarioDao {
     
 }
