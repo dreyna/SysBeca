@@ -10,5 +10,5 @@ package pe.edu.upeu.sysbeca.interfaces;
  * @author alum.fial8
  */
 public interface UsuarioInterface {
-    
+  public boolean autentificarUsuario(String user, String clave);
 }

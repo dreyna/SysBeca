@@ -15,10 +15,10 @@ import javax.swing.JOptionPane;
  * @author alum.fial8
  */
 public class Conexion {
-    private static String url="jdbc:mysql://localhost:3306/dbpoo"; 
-    private static String driver="com.mysql.jdbc.Driver"; 
-    private static String user="root"; 
-    private static String clave="root";
+    private static final String url="jdbc:mysql://localhost:3306/bd_almacen"; 
+    private static final String driver="com.mysql.jdbc.Driver"; 
+    private static final String user="root"; 
+    private static final String clave="root";
     private static Connection cx=null;
     
     
