@@ -8,8 +8,11 @@ package pe.edu.upeu.sysbeca.dao;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
 import javax.swing.JOptionPane;
 import pe.edu.upeu.sysbeca.interfaces.UsuarioInterface;
+import pe.edu.upeu.sysbeca.model.Usuario;
 import pe.edu.upeu.sysbeca.util.Conexion;
 
 /**
@@ -38,6 +41,19 @@ public class UsuarioDao implements UsuarioInterface {
         }
         
         return op;
+    }
+    public List<Usuario> listaridcategoria()
+    {
+       List<Usuario> lista = new ArrayList<>();
+       sql = "SELECT *FROM categoria";
+        try {
+            cx = Conexion.getConexion();
+            statement= cx.createStatement ();
+            rs = statement.executeQuery(sql);
+            
+        } catch (Exception e) {
+        }
+        return null;
     }
     
 }
