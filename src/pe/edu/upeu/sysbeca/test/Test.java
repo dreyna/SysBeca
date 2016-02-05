@@ -5,6 +5,8 @@
  */
 package pe.edu.upeu.sysbeca.test;
 
+import pe.edu.upeu.sysbeca.model.Alumno;
+
 /**
  *
  * @author alum.fial8
@@ -16,6 +18,15 @@ public class Test {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        registrar();
     }
+    public static void registrar(){
+    Alumno a = new Alumno("Cesar", "Malaspina", "5465575", "Alameda");
     
+        System.out.println("Nombres:" +a.getNombres());
+        System.out.println("Apellidos:" +a.getApellidos());
+        System.out.println("Telefono:" +a.getTelefono());
+        System.out.println("Direccion:" +a.getDireccion());
+        
+    }
 }
