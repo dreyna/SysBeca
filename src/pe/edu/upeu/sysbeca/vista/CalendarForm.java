@@ -153,6 +153,7 @@ public class CalendarForm extends javax.swing.JInternalFrame {
         SimpleDateFormat formato = new SimpleDateFormat("dd-MM-yyyy");
         Date fechaE = null;
         Date fecha = dcfechaNac.getDate();
+        //Date fecha = dcfechaNac.getDate().get();
         try {
           String fechaw = formato.format(fecha);
             JOptionPane.showMessageDialog(null, fechaw);

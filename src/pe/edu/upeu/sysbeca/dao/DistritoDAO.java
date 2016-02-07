@@ -48,7 +48,7 @@ public class DistritoDAO implements DistritoInterface{
     @Override
     public boolean registrarDistrito(Distrito d) {
         boolean op= false;
-        sql = "INSERT INTO  distrito (iddistrito,idregion ,distrito)VALUES (null,"
+        sql = "INSERT INTO distrito(iddistrito, idregion, distrito) VALUES(null,"
           +d.getIdregion()+",'"+d.getNom_distrito()+"')";
         try {
             cx = Conexion.getConexion();
