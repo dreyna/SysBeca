@@ -35,6 +35,7 @@ int id;
     public DistritoForm() {
         initComponents();
         cargarCombo();
+        listar();
     }
 
     /**
@@ -226,6 +227,19 @@ public void cargarCombo(){
 //     boxModel.addElement(datos);
 //     cboregion.setModel(boxModel);
      cboregion.addItem(lista1.get(i).getNom_region());
+ }
+}
+public void listar(){
+ tableModel = (DefaultTableModel) tbdatos.getModel();
+ lista2 =  di.listarDistrito();
+ Object datos[] = new Object[4];
+ for(int i=0; i<lista2.size();i++){
+ datos[0]= i+1;
+ datos[1]= lista2.get(i).getIddistrito();
+ datos[2]= lista2.get(i).getIdregion();
+ datos[3]= lista2.get(i).getNom_distrito();
+ tableModel.addRow(datos);
+ tbdatos.setModel(tableModel);
  }
 }
     // Variables declaration - do not modify//GEN-BEGIN:variables
