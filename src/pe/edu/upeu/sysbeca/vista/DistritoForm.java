@@ -207,9 +207,10 @@ int id;
     }//GEN-LAST:event_cboregionMouseReleased
 
     private void btnregistrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnregistrarActionPerformed
-        // TODO add your handling code here:
+        // TODO add your handling code here: 
+        int x = Integer.parseInt(txtidregion.getText());
         String d = txtdistrito.getText();
-        Distrito d1 = new Distrito(id, d);
+        Distrito d1 = new Distrito(x, d);
         if(di.registrarDistrito(d1)){
             JOptionPane.showMessageDialog(null, "Registrado Correctamente..!!");
         }else{
